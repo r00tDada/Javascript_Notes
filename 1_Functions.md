@@ -50,3 +50,6 @@ If a function is not the property of an object, then it is invoked as a function
      // Invoke double as a method.  
     myObject.double( ); document.writeln(myObject.getValue()); // 6  
 
+#### The Constructor Invocation Pattern
+
+** JavaScript is a prototypal inheritance language. That means that objects can inherit properties directly from other objects. The language is class-free. **
