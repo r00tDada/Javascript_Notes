@@ -37,4 +37,6 @@
     fooObject.increment(2);  
     document.writeln(fooObject.value); // 3  
 
-2. 
+2.  If a function is not the property of an object, then it is invoked as a function. In this case the this is bound to the global object (Window object in browser). The expectation is that when the inner function is invoked, this would still be bound to the this variable of the outer function. Solution for this case: the method defines a variable and assigns it the value of this, the inner function will have access to this through that variable.
+
+    
