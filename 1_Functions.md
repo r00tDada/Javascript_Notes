@@ -92,3 +92,10 @@ The apply method lets us construct an array of arguments to use to invoke a func
     // a get_status method.
     var status = Quo.prototype.get_status.apply(statusObject);
         // status is 'A-OK'
+
+
+### Scope
+
+1. JavaScript does not have block scope even though its block syntax suggests that it does. 
+2. JavaScript does have function scope. That means that the parameters and variables defined in a function are not visible outside of the function and that a variable defined anywhere within a function is visible everywhere within the function.
+
