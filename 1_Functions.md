@@ -55,3 +55,18 @@ If a function is not the property of an object, then it is invoked as a function
 **JavaScript is a prototypal inheritance language. That means that objects can inherit properties directly from other objects. The language is class-free.**
 
 If a function is invoked with the new prefix, then a new object will be created with a hidden link to the value of the function’s prototype member, and this will be bound to that new object.
+
+    // Create a constructor function called Boo.
+    // It makes an object with a status property.
+    var Boo = function (string) { this.status = string; };
+    // Give all instances of Boo a public method
+    // called get_status
+    Boo.prototype.get_status = function () {
+        return this.status;
+    };
+    // Make an instance of Boo.
+    var myBoo = new Boo("I dont know");
+    document.writeln(myBoo.get_status()); // I dont know
+
+Functions that are intended to be used with the new prefix are called constructors. By convention, they are kept in variables with a capitalized name. If a constructor is called without the new prefix, very bad things can happen without a compile-time or runtime warning, so the capitalization convention is really important.
+
