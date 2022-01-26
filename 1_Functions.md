@@ -54,4 +54,4 @@ If a function is not the property of an object, then it is invoked as a function
 
 **JavaScript is a prototypal inheritance language. That means that objects can inherit properties directly from other objects. The language is class-free.**
 
-
+If a function is invoked with the new prefix, then a new object will be created with a hidden link to the value of the function’s prototype member, and this will be bound to that new object.
