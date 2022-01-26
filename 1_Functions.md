@@ -42,15 +42,15 @@ The binding of this to the object happens at invocation time. This very late bin
 If a function is not the property of an object, then it is invoked as a function. In this case the this is bound to the global object (Window object in browser). The expectation is that when the inner function is invoked, this would still be bound to the this variable of the outer function. Solution for this case: the method defines a variable and assigns it the value of this, the inner function will have access to this through that variable.
 
 
-        // Augment myObject with a double method.  
-        myObject.double = function () {  
-        var that = this; // Workaround.  
-        var helper = function () {   
-        that.value = add(that.value, that.value);  
-        };  
-        helper(); // Invoke helper as a function. };  
-        // Invoke double as a method.  
-        myObject.double( ); document.writeln(myObject.getValue()); // 6  
+    // Augment myObject with a double method.  
+    myObject.double = function () {  
+    var that = this; // Workaround.  
+    var helper = function () {   
+    that.value = add(that.value, that.value);  
+    };  
+    helper(); // Invoke helper as a function. };  
+    // Invoke double as a method.  
+    myObject.double( ); document.writeln(myObject.getValue()); // 6  
 
 #### The Constructor Invocation Pattern
 
