@@ -31,7 +31,7 @@
     value: 0,  
     increment: function (inc) {  
     this.value += typeof inc === 'number' ? inc : 1;      
-        }  
+    \t    }  
     };  
     fooObject.increment();  
     document.writeln(fooObject.value); // 1   
