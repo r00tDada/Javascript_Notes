@@ -19,4 +19,6 @@ There are four patterns of invocation in JavaScript:
  * the method invocation pattern
  * the function invocation pattern
  * the constructor invocation pattern 
- * the apply invocation pattern.
+ * the apply invocation pattern
+
+2. 
