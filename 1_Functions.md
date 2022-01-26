@@ -26,15 +26,14 @@
 
 1. this is bound to that object (eg: fooObject in the example below).
    The binding of this to the object happens at invocation time. This very late binding makes functions that use this highly reusable. Methods that get their object context from this are called public methods.
-${
-var fooObject = {
-value: 0,
-increment: function (inc) {
-this.value += typeof inc === 'number' ? inc : 1;
-}
-};
-fooObject.increment();
-document.writeln(fooObject.value); // 1
-fooObject.increment(2);
-document.writeln(fooObject.value); // 3
-}
+
+    var fooObject = {
+    value: 0,
+    increment: function (inc) {
+    this.value += typeof inc === 'number' ? inc : 1;    
+        }
+    };
+    fooObject.increment();
+    document.writeln(fooObject.value); // 1
+    fooObject.increment(2);
+    document.writeln(fooObject.value); // 3
