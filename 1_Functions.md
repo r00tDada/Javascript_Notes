@@ -70,3 +70,6 @@ If a function is invoked with the new prefix, then a new object will be created 
 
 Functions that are intended to be used with the new prefix are called constructors. By convention, they are kept in variables with a capitalized name. If a constructor is called without the new prefix, very bad things can happen without a compile-time or runtime warning, so the capitalization convention is really important.
 
+
+#### The Apply Invocation Pattern
+
