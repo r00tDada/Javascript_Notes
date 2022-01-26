@@ -11,4 +11,4 @@
 
 1. Functions can be defined inside of other functions. An inner function, of course, has access to its parameters and variables. An inner function also enjoys access to the parameters and variables of the functions it is nested within.
 The function object created by a function literal contains a link to that outer context. This is called **closure**
-
+2. 
