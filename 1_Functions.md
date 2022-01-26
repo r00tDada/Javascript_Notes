@@ -10,15 +10,30 @@
 ### Function Literal
 
 1. Functions can be defined inside of other functions. An inner function, of course, has access to its parameters and variables. An inner function also enjoys access to the parameters and variables of the functions it is nested within.
-The function object created by a function literal contains a link to that outer context. This is called **closure**
+   The function object created by a function literal contains a link to that outer context. This is called **closure**
 
 ### Invocation
 
-1. Every function receives two additional parameters: this, arguments. The this parameter’s value is different base on the invocation pattern. 
-There are four patterns of invocation in JavaScript: 
- * the method invocation pattern
- * the function invocation pattern
- * the constructor invocation pattern 
- * the apply invocation pattern
+1. Every function receives two additional parameters: this, arguments. The this parameter’s value is different base on the invocation pattern.
+   There are four patterns of invocation in JavaScript:
 
-2. 
+- the method invocation pattern
+- the function invocation pattern
+- the constructor invocation pattern
+- the apply invocation pattern
+
+#### The Method Invocation Pattern
+
+1. this is bound to that object (eg: fooObject in the example below).
+   The binding of this to the object happens at invocation time. This very late binding makes functions that use this highly reusable. Methods that get their object context from this are called public methods.
+
+var fooObject = {
+value: 0,
+increment: function (inc) {
+this.value += typeof inc === 'number' ? inc : 1;
+}
+};
+fooObject.increment();
+document.writeln(fooObject.value); // 1
+fooObject.increment(2);
+document.writeln(fooObject.value); // 3
