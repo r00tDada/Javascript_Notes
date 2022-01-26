@@ -36,3 +36,5 @@
     document.writeln(fooObject.value); // 1   
     fooObject.increment(2);  
     document.writeln(fooObject.value); // 3  
+
+2. 
