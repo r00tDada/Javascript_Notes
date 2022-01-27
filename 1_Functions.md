@@ -107,3 +107,5 @@ The apply method lets us construct an array of arguments to use to invoke a func
 
 1. A module is a function or object that presents an interface but that hides its state and implementation. 
 
+2. Use of the module pattern can eliminate the use of global variables. It promotes information hiding and other good design practices. It is very effective in encapsulat- ing applications and other singletons.
+
