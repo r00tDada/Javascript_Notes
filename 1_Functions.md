@@ -99,3 +99,11 @@ The apply method lets us construct an array of arguments to use to invoke a func
 1. JavaScript does not have block scope even though its block syntax suggests that it does. 
 2. JavaScript does have function scope. That means that the parameters and variables defined in a function are not visible outside of the function and that a variable defined anywhere within a function is visible everywhere within the function.
 
+### Closure
+
+1. The inner functions get access to the parameters and variables of the functions they are defined within (with the exception of this and arguments)
+
+### Module
+
+1. A module is a function or object that presents an interface but that hides its state and implementation. 
+
